@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;
+
+    &__title{
+        font-family: $titles;
+        font-weight: 800;
+        font-size: 4rem;
+        color: $black;
+    }
+
+    &__subtitle{
+        font-family: $titles;
+        font-weight: 600;
+        font-size: 2.4rem;
+        color: $darkred;
+        padding: 1.5rem 0;
+    }
+
+    &__finder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        height: 3rem;
+        padding: 0.5rem;
+        border: 1px $gray solid;
+        border-radius: 1rem;
+
+
+        &--icon{
+            padding-left: 1rem;
+            font-size: 1.6rem;
+            color: $gray;
+        }
+
+        &--input{
+            font-family: $regular;
+            font-size: 1.5rem;
+            width: 40rem;
+            padding-left: 1rem;
+            border: none;
+            background-color: inherit;
+
+            &::placeholder{
+                color: $gray;
+                font-size: 1.3rem;
+            }
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+    }
+}

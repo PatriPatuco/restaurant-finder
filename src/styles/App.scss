@@ -6,3 +6,26 @@
 @import "./Filter.scss";
 @import "./RestaurantCard.scss";
 @import "./ReservationModal.scss";
+
+body {
+    width: 100vw;
+  height: 100vh;
+  background:
+    radial-gradient(
+         circle at 50% 85%,
+      $white 10%,
+      rgba(0, 255, 34, 0) 80.71%
+    ),
+    radial-gradient(
+      circle at 10% -50%,
+      $bgpink,
+      rgba(255, 0, 0, 0) 60.71%
+    ),
+    radial-gradient(
+        circle at 99% 150%,
+        $bgorange,
+        rgba(0, 255, 0, 0) 60.71%
+      ) $white;
+  border-radius: 50%;
+
+}
