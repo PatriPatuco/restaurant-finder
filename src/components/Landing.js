@@ -1,17 +1,35 @@
 import Header from "./Header";
 import RestaurantCard from "./RestaurantCard";
 import Filter from "./Filter";
+import RestaurantsData from "../services/RestaurantsData.js";
 
 
 const Landing = () => {
+
+const renderRestaurants = () =>
+  RestaurantsData.map((restaurant, index) => (
+    <RestaurantCard
+      className="landing__content--restaurants--item"
+      key={index}
+      image={restaurant.image}
+      name={restaurant.name}
+      type={restaurant.type}
+      price={restaurant.price}
+    />
+  ));
+
+
+  console.log(renderRestaurants)
+
     return (
       <div>
         <Header />
         <section className="landing__content">
-            <article className="landing__content--filter"><Filter/></article>
-          <article className="landing__content--restList">
-            <RestaurantCard className="landing__content--resList--item" />
-          </article>
+            <Filter/>
+          
+          <section className="landing__content--restaurants">
+            {renderRestaurants()}
+          </section>
         </section>
       </div>
     );

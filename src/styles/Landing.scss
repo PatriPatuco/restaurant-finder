@@ -1,0 +1,14 @@
+.landing__content{
+    display: flex;
+    padding: 10rem 20rem 0 20rem;
+    gap: 2rem;
+    justify-content: center;
+
+    &--restaurants{
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+}

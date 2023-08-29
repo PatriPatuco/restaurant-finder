@@ -6,7 +6,7 @@ const Header = () => {
         Busca y reserva en tus restaurantes favoritos
       </h3>
       <label className="header__finder" htmlFor="search">
-        <i class="header__finder--icon fa-solid fa-magnifying-glass"></i>
+        <i className="header__finder--icon fa-solid fa-magnifying-glass"></i>
         <input
         className="header__finder--input"
           type="text"
