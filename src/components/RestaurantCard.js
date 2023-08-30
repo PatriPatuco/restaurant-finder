@@ -1,4 +1,4 @@
-const RestaurantCard = ({ image, name, type, price }) => {
+const RestaurantCard = ({ image, name, type, price, handleToggleModal }) => {
   return (
     <article className="restaurantCard">
       <img src={image} alt={image} className="restaurantCard__img" />
@@ -11,7 +11,10 @@ const RestaurantCard = ({ image, name, type, price }) => {
         </div>
       </div>
       <div className="restaurantCard__buttons">
-        <button className="restaurantCard__buttons--reservation">
+        <button
+          className="restaurantCard__buttons--reservation"
+          onClick={handleToggleModal}
+        >
           <i className="fa-regular fa-calendar restaurantCard__buttons--reservation--i"></i>
           Hacer reserva
         </button>

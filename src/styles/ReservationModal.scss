@@ -1,0 +1,17 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0006;
+
+  &__info {
+    margin: 30rem auto;
+    border-radius: 1rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    width: 90rem;
+  }
+}
