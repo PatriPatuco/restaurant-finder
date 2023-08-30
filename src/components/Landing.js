@@ -6,13 +6,18 @@ import RestaurantsData from "../services/RestaurantsData.js";
 
 const Landing = () => {
   const [selectedFilters, setSelectedFilters] = useState([]);
+  const [search, setSearch] = useState("");
 
   const handleSelectFilter = (filters) => {
     setSelectedFilters(filters);
   };
 
+  const handleSearch = (value) => {
+    setSearch(value);
+  };
+
   const renderRestaurants = () => {
-    if (selectedFilters.length === 0) {
+    if (selectedFilters.length === 0 && search === "") {
       return RestaurantsData.map((restaurant, index) => (
         <RestaurantCard
           key={index}
@@ -24,9 +29,19 @@ const Landing = () => {
       ));
     }
 
-    const filteredRestaurants = RestaurantsData.filter((restaurant) =>
-      selectedFilters.includes(restaurant.type)
-    );
+    let filteredRestaurants = RestaurantsData;
+
+    if (selectedFilters.length > 0) {
+      filteredRestaurants = filteredRestaurants.filter((restaurant) =>
+        selectedFilters.includes(restaurant.type)
+      );
+    }
+
+    if (search !== "") {
+      filteredRestaurants = filteredRestaurants.filter((restaurant) =>
+        restaurant.name.toLowerCase().includes(search.toLowerCase())
+      );
+    }
 
     if (filteredRestaurants.length === 0) {
       return (
@@ -49,11 +64,11 @@ const Landing = () => {
 
   useEffect(() => {
     renderRestaurants();
-  }, [selectedFilters]);
+  }, [selectedFilters, search]);
 
   return (
     <div>
-      <Header />
+      <Header handleSearch={handleSearch} />
       <section className="landing__content">
         <Filter handleSelectFilter={handleSelectFilter} />
         <section className="landing__content--restaurants">
