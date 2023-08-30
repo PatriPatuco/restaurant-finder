@@ -1,42 +1,71 @@
-const ReservationModal = ({restaurant, handleToggleModal}) => {
-
-    const handleClick = () => {
-  handleToggleModal();
-};
-
+const ReservationModal = ({ handleToggleModal, name, image, type, price }) => {
+  
+  const handleClick = () => {
+    handleToggleModal();
+  };
 
   return (
-
     <section className="modal">
-      <div className="modal__info">
-        <button onClick={handleClick}>
+      <div className="modal__content">
+        <button className="modal__close-btn" onClick={handleClick}>
           <i class="fa-solid fa-xmark"></i>
         </button>
-        <h3 className="modal__info--title">Nombre del restaurante</h3>
-        <p className="modal__info--subtitle">Italiana</p>
-        <p className="modal__info--subtitle">€€</p>
-        <img className="modal__image" src="../images/almaMater-mediterranea.jpg" alt="almamater" />
-        <button className="modal__button--menu">
-          <i className="fa-solid fa-clipboard-list modal__buttons--reservation--i"></i>
-          Ver carta
-        </button>
-        <fieldset>
-          <legend>Fecha de reserva</legend>
-          <label htmlFor="">
-            <input type="date" /> <input type="time" /> <input type="number" />
+        <section className="modal__info">
+          <h3 className="modal__info--title">{name}</h3>
+          <p className="modal__info--subtitle">{type}</p>
+          <p className="modal__info--subtitle">{price}</p>
+          <img className="modal__info--image" src={image} alt={image} />
+          <button className="modal__info--button">
+            <i className="fa-solid fa-clipboard-list modal__info--button--i"></i>
+            Ver carta
+          </button>
+        </section>
+        <fieldset className="modal__form">
+          <legend className="modal__form--legend">Fecha de reserva</legend>
+          <label className="modal__form--date" htmlFor="">
+            <input className="modal__form--date--input" type="date" />|
+            <input className="modal__form--date--input" type="time" />|
+            <input
+              className="modal__form--date--input"
+              type="number"
+              placeholder="Número de comensales"
+            />
+            <i class="fa-solid fa-user"></i>
           </label>
-          <legend>Datos de reserva</legend>
-          <label htmlFor="fullname">Nombre</label>
-          <input id="fullname" type="text" placeholder="Nombre y apellido" />
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="nombre@email.com" />
-          <label htmlFor="phone">Teléfono</label>
-          <input type="tel" name="" id="phone" placeholder="+34 777 777 777" />
+          <legend className="modal__form--legend">Datos de reserva</legend>
+          <div className="modal__form--customer">
+            <label className="modal__form--label" htmlFor="fullname">
+              Nombre
+            </label>
+            <input
+              className="modal__form--input "
+              id="fullname"
+              type="text"
+              placeholder="Nombre y apellido"
+            />
+            <label className="modal__form--label" htmlFor="email">
+              Email
+            </label>
+            <input
+              className="modal__form--input "
+              type="email"
+              id="email"
+              placeholder="nombre@email.com"
+            />
+            <label className="modal__form--label" htmlFor="phone">
+              Teléfono
+            </label>
+            <input
+              className="modal__form--input "
+              type="tel"
+              name=""
+              id="phone"
+              placeholder="+34 777 777 777"
+            />
+          </div>
+          
         </fieldset>
-        <button className="modal__button--menu">
-          <i className="fa-solid fa-clipboard-list modal__buttons--reservation--i"></i>
-          Enviar
-        </button>
+        <input className="modal__form--submit" type="submit" />
       </div>
     </section>
   );

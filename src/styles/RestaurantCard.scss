@@ -1,11 +1,11 @@
 .restaurantCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 1rem 2rem 1rem;
-    margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem 2rem 1rem;
+  margin-bottom: 5rem;
   width: 27rem;
- /*  height: 25rem; */
+  /*  height: 25rem; */
   border-radius: 0.8rem;
   box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.11);
   background-color: $white;
@@ -22,21 +22,21 @@
     width: 100%;
     text-align: left;
 
-    &--title{
-        font-family: $titles;
-        font-size: 1.4rem;
-        font-weight: 800;
+    &--title {
+      font-family: $titles;
+      font-size: 1.4rem;
+      font-weight: 800;
     }
 
     &--info {
-        display: flex;
-        gap: 1rem;
-        padding: 0.5rem 0 2rem 0;
+      display: flex;
+      gap: 1rem;
+      padding: 0.5rem 0 2rem 0;
 
-        &--p{
-            font-family: $regular;
-            font-size: 1.2rem;
-        }
+      &--p {
+        font-family: $regular;
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -45,32 +45,30 @@
     display: flex;
     justify-content: space-between;
 
-    &--reservation{
-        font-family: $regular;
-        padding: 0.7rem;
-        background-color: $green;
-        border: none;
-        border-radius: 0.5rem;
-        cursor: pointer;
+    &--reservation {
+      font-family: $regular;
+      padding: 0.7rem;
+      background-color: $green;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
 
-        &--i{
-            padding-right: 1rem;
-        }
+      &--i {
+        padding-right: 1rem;
+      }
     }
 
-    &--menu{
-        font-family: $regular;
-        padding: 0.7rem;
-        background-color: $orange;
-        border: none;
-        border-radius: 0.5rem;
-        cursor: pointer;
+    &--menu {
+      font-family: $regular;
+      padding: 0.7rem;
+      background-color: $orange;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
 
-         &--i{
-            padding-right: 1rem;
-        }
+      &--i {
+        padding-right: 1rem;
+      }
     }
-
-   
   }
 }

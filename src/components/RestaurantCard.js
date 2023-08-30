@@ -1,4 +1,20 @@
-const RestaurantCard = ({ image, name, type, price, handleToggleModal }) => {
+import ReservationModal from "./ReservationModal";
+
+import { useState } from "react";
+
+const RestaurantCard = ({ image, name, type, price }) => {
+  const [modalOn, setModalOn] = useState(false);
+
+  const handleToggleModal = () => {
+    setModalOn(!modalOn);
+  };
+
+  const renderModal = () => {
+    if (modalOn === true) {
+      return <ReservationModal handleToggleModal={handleToggleModal} name={name} image={image} type={type} price={price} />;
+    }
+  };
+
   return (
     <article className="restaurantCard">
       <img src={image} alt={image} className="restaurantCard__img" />
@@ -23,6 +39,8 @@ const RestaurantCard = ({ image, name, type, price, handleToggleModal }) => {
           Ver carta
         </button>
       </div>
+
+      {renderModal()}
     </article>
   );
 };
