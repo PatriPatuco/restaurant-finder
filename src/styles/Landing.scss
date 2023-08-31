@@ -1,18 +1,21 @@
 .landing__content {
+  min-height: 100vh;
   display: flex;
   padding: 10rem 20rem 0 20rem;
   gap: 2rem;
   justify-content: center;
+  align-items: start;
 
   &--restaurants {
-    width: 70%;
+    width: 67%;
     display: flex;
     flex-wrap: wrap;
     gap: 0 5rem;
 
     &--title {
       display: flex;
-      width: 100%;
+      min-height: 5%;
+      width: 90%;
       font-family: $titles;
       font-size: 1.6rem;
       font-weight: 800;  
@@ -27,6 +30,7 @@
 }
 
 .no-results-message {
+  padding-top: 2rem;
   font-family: $regular;
   font-size: 2rem;
   color: $darkred;

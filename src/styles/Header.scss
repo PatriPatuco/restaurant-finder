@@ -1,62 +1,61 @@
 .header {
-background-color: #ffad6a;
+  background-color: $brightorange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+
+  &__logo {
+    height: 8rem;
+  }
+
+  &__title {
+    font-family: $titles;
+    font-weight: 800;
+    font-size: 4rem;
+    color: $white;
+  }
+
+  &__subtitle {
+    font-family: $regular;
+    font-size: 2.2rem;
+    color: $white;
+    padding: 1.5rem 0;
+  }
+
+  &__finder {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8rem 0;    
+    background-color: $white;
+    height: 3rem;
+    padding: 0.5rem;
+    border: 1px $darkred solid;
+    border-radius: 1rem;
 
-    &__logo{
-        height: 8rem;
+    &--icon {
+      padding-left: 1rem;
+      font-size: 1.6rem;
+      color: $darkred;
     }
 
-    &__title{
-        font-family: $titles;
-        font-weight: 800;
-        font-size: 4rem;
-        color: $white;
+    &--input {
+      font-family: $regular;
+      font-size: 1.5rem;
+      width: 40rem;
+      padding-left: 1rem;
+      border: none;
+      background-color: inherit;
+
+      &::placeholder {
+        color: $darkred;
+        font-size: 1.3rem;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
-
-    &__subtitle{
-        font-family: $regular;
-        font-size: 2.2rem;
-        color: $white;
-        padding: 1.5rem 0;
-    }
-
-    &__finder{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $white;
-        height: 3rem;
-        padding: 0.5rem;
-        border: 1px $darkred solid;
-        border-radius: 1rem;
-
-
-        &--icon{
-            padding-left: 1rem;
-            font-size: 1.6rem;
-            color: $darkred;
-        }
-
-        &--input{
-            font-family: $regular;
-            font-size: 1.5rem;
-            width: 40rem;
-            padding-left: 1rem;
-            border: none;
-            background-color: inherit;
-
-            &::placeholder{
-                color: $darkred;
-                font-size: 1.3rem;
-            }
-
-            &:focus{
-                outline: none;
-            }
-        }
-    }
+  }
 }

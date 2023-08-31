@@ -3,6 +3,7 @@ import Header from "./Header";
 import RestaurantCard from "./RestaurantCard";
 import Filter from "./Filter";
 import RestaurantsData from "../services/RestaurantsData.js";
+import Footer from "./Footer";
 
 const Landing = () => {
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -81,6 +82,7 @@ const Landing = () => {
           {renderRestaurants()}
         </section>
       </section>
+      <Footer/>
     </div>
   );
 };

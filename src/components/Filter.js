@@ -10,6 +10,7 @@ const Filter = ({ handleSelectFilter }) => {
    } else {
      setSelectedFilter([...selectedFilter, value]);
    }
+   
    handleSelectFilter((prevSelectedFilter) => {
      if (prevSelectedFilter.includes(value)) {
        return prevSelectedFilter.filter((filter) => filter !== value);

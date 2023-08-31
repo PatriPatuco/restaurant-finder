@@ -5,7 +5,7 @@
   padding: 1rem 1rem 2rem 1rem;
   margin-bottom: 5rem;
   width: 27rem;
-  /*  height: 25rem; */
+  height: 22rem;
   border-radius: 0.8rem;
   box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.11);
   background-color: $white;
@@ -53,6 +53,11 @@
       border-radius: 0.5rem;
       cursor: pointer;
 
+      &:hover {
+        background-color: $darkgreen;
+        font-weight: 800;
+      }
+
       &--i {
         padding-right: 1rem;
       }
@@ -65,6 +70,11 @@
       border: none;
       border-radius: 0.5rem;
       cursor: pointer;
+      
+      &:hover {
+        background-color: $brightorange;
+        font-weight: 800;
+      }
 
       &--i {
         padding-right: 1rem;

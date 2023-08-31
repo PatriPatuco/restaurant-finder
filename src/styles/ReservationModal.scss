@@ -49,6 +49,11 @@
       border-radius: 0.5rem;
       cursor: pointer;
 
+      &:hover {
+        background-color: $brightorange;
+        font-weight: 800;
+      }
+
       &--i {
         padding-right: 1rem;
       }
@@ -129,6 +134,11 @@
       border: none;
       border-radius: 0.5rem;
       cursor: pointer;
+
+      &:hover {
+        background-color: $darkgreen;
+        font-weight: 800;
+      }
     }
   }
 
@@ -140,6 +150,11 @@
 
     .fa-xmark{
             font-size: 2rem;
+
+            &:hover {
+        color: $brightorange;
+        font-weight: 800;
+      }
     }
   }
 }

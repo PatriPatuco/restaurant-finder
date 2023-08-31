@@ -1,0 +1,52 @@
+.footer {
+  background-color: $bgorange;
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem;
+  flex-wrap: wrap;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-family: $regular;
+    font-size: 1.4rem;
+
+    :hover {
+      font-weight: 800;
+      color: $darkred;
+    }
+
+    &--item {
+      padding-bottom: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  &__sm {
+    display: block;
+
+    :hover {
+      color: $darkred;
+    }
+
+    &--title {
+      width: 100%;
+      font-family: $regular;
+      font-size: 1.4rem;
+    }
+    &--icon {
+      font-size: 1.6rem;
+      padding-top: 1rem;
+      padding-right: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  &__copy {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: $regular;
+    color: $darkred;
+  }
+}
