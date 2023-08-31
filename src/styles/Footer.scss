@@ -1,9 +1,18 @@
 .footer {
   background-color: $bgorange;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  @media (min-width: 1080px) {
+  flex-direction: row;
   justify-content: space-around;
   padding: 4rem;
   flex-wrap: wrap;
+  }
 
   &__info {
     display: flex;
@@ -43,10 +52,15 @@
   }
 
   &__copy {
-    width: 100%;
     font-size: 1.2rem;
     text-align: center;
     font-family: $regular;
     color: $darkred;
+  padding: 2rem;
+    @media(min-width: 1080px) {
+      padding: 0;
+    width: 100%;
+    
+    }
   }
 }

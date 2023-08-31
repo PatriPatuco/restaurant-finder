@@ -12,8 +12,7 @@ const ReservationModal = ({ handleToggleModal, name, image, type, price }) => {
         </button>
         <section className="modal__info">
           <h3 className="modal__info--title">{name}</h3>
-          <p className="modal__info--subtitle">{type}</p>
-          <p className="modal__info--subtitle">{price}</p>
+          <p className="modal__info--subtitle">{type} - {price}</p>
           <img className="modal__info--image" src={image} alt={image} />
           <button className="modal__info--button">
             <i className="fa-solid fa-clipboard-list modal__info--button--i"></i>
@@ -63,7 +62,6 @@ const ReservationModal = ({ handleToggleModal, name, image, type, price }) => {
               placeholder="+34 777 777 777"
             />
           </div>
-          
         </fieldset>
         <input className="modal__form--submit" type="submit" />
       </div>

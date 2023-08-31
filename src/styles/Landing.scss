@@ -1,37 +1,53 @@
 .landing__content {
-  min-height: 100vh;
   display: flex;
-  padding: 10rem 20rem 0 20rem;
-  gap: 2rem;
-  justify-content: center;
-  align-items: start;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+  padding: 0 5rem;
+
+  @media (min-width: 1080px) {
+    min-height: 100vh;
+    flex-direction: row;
+    padding: 10rem 20rem 0 20rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: start;
+  }
 
   &--restaurants {
-    width: 67%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 5rem;
-
+    @media (min-width: 1080px) {
+      width: 30%;
+      display: flex;
+      flex-wrap: wrap;
+      width: 67%;
+      gap: 0 5rem;
+    }
     &--title {
       display: flex;
       min-height: 5%;
       width: 90%;
       font-family: $titles;
       font-size: 1.6rem;
-      font-weight: 800;  
-      padding-bottom: 1.2rem;    
+      font-weight: 800;
+      padding-bottom: 1.2rem;
     }
 
-    &--icon{
-    font-size: 1.5rem;
-    padding-right: 1rem;
-  }
+    &--icon {
+      font-size: 1.5rem;
+      padding-right: 1rem;
+    }
   }
 }
 
 .no-results-message {
+font-family: $regular;
+ color: $darkred;
+font-size: 1.5rem;
+text-align: center;
+padding: 2rem;
+  @media (min-width: 1080px) {
+  padding: 0;
   padding-top: 2rem;
-  font-family: $regular;
   font-size: 2rem;
-  color: $darkred;
+  }
 }

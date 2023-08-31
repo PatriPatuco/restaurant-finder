@@ -7,19 +7,41 @@
   background-color: #0006;
 
   &__content {
-    margin: 20rem auto;
-    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 1.5rem;
     background-color: white;
-    display: grid;
-    grid-template-columns: 35% 60% 5%;
-    grid-template-rows: 5% 85% 10%;
-    width: 90rem;
-    padding: 4rem;
+    border-radius: 1rem;
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 1080px) {
+      align-items: start;
+      height: 45rem;
+      margin: 20rem auto;
+      display: grid;
+      grid-template-columns: 35% 60% 5%;
+      grid-template-rows: 5% 85% 10%;
+      width: 90rem;
+      padding: 4rem;
+    }
   }
 
   &__info {
-    grid-column: 1;
-    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 1080px) {
+      grid-column: 1;
+      grid-row: 1/3;
+      align-items: start;
+    }
+
     &--title {
       font-family: $titles;
       font-size: 1.6rem;
@@ -61,13 +83,23 @@
   }
 
   &__form {
-    grid-column: 2;
-    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1080px) {
+      grid-column: 2;
+      grid-row: 2/3;
+    }
+
     &--legend {
       font-family: $titles;
       font-weight: 800;
-      font-size: 2.1rem;
-      padding-bottom: 2rem;
+      padding: 02rem 0;
+      font-size: 1.8rem;
+      @media (min-width: 1080px) {
+        font-size: 2.1rem;
+        padding-bottom: 2rem;
+      }
     }
 
     &--label {
@@ -96,17 +128,28 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      width: 96%;
-      border: 0.1rem $gray solid;
-      height: 3rem;
-      border-radius: 0.8rem;
-      font-size: 2rem;
-      padding: 0 1rem;
-      margin-bottom: 4rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+      @media (min-width: 1080px) {
+        gap: 0;
+        width: 96%;
+        border: 0.1rem $gray solid;
+        height: 3rem;
+        border-radius: 0.8rem;
+        font-size: 2rem;
+        padding: 0 1rem;
+        margin-bottom: 4rem;
+      }
 
       &--input {
         font-family: $regular;
-        border: none;
+        border: 0.1rem $gray solid;
+        border-radius: 0.8rem;
+        padding: 0 1rem;
+
+        @media (min-width: 1080px) {
+          border: none;
+        }
       }
 
       .customers {
@@ -114,7 +157,11 @@
       }
 
       .fa-user {
-        font-size: 1.4rem;
+        display: none;
+        @media (min-width: 1080px) {
+          display: inherit;
+          font-size: 1.4rem;
+        }
       }
     }
 
@@ -148,10 +195,10 @@
     grid-column: 3/3;
     cursor: pointer;
 
-    .fa-xmark{
-            font-size: 2rem;
+    .fa-xmark {
+      font-size: 2rem;
 
-            &:hover {
+      &:hover {
         color: $brightorange;
         font-weight: 800;
       }

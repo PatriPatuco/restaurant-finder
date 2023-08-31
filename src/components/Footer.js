@@ -16,8 +16,8 @@ const Footer = () => {
         </div>
 
         <small className="footer__copy">
-          Esta página ha sido creada con cariño por Patricia Becerra para
-          Welkhome.
+          &copy; Esta página ha sido creada con cariño por Patricia
+          Becerra para Welkhome.
         </small>
       </footer>
     );
