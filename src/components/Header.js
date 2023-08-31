@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "../images/mpd-logo.png"
 
 const Header = ({ handleSearch }) => {
   const [searchValue, setSearchValue] = useState("");
@@ -11,6 +12,7 @@ const Header = ({ handleSearch }) => {
 
   return (
     <header className="header">
+      <img className="header__logo" src={logo} alt={logo}></img>
       <h2 className="header__title">Mesa para Dos</h2>
       <h3 className="header__subtitle">
         Busca y reserva en tus restaurantes favoritos
