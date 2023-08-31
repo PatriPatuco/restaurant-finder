@@ -1,26 +1,46 @@
-# React starter kit
+# Landing Restaurantes
 
-¡Bienvenido a mi Starter kit para REACT!
+¡Bienvenidos a éste repositorio!
 
-En este proyecto puedes encontrar la estructura básica con la que partir de cero en cualquier página que quieras crear con React.
+¿Cuál es su contenido? Aquí encontrarás el proyecto de una landing page donde elegir un restaurante de una lsita de varios posibles.
 
-No incluye nada relacionado con tests ni SEO, esa parte deberás añadirla tú si deseas incluirlo en tu proyecto.
 
-## Carpetas
-La estructura de estilos y de componentes está organizada con mis preferencias, si deseas modificarla, acuérdate de cambiar las rutas de los imports en las carpetas de App.js, etc.
+## Tabla de contenido
 
-## Hojas de estilo y Sass
-IMPORTANTE: Este starter kit está pensado para utilizar Sass en lugar de CSS, comprueba que se encuentre el paquete dentro del archivo package.json o instalalo ejecutando npm install node-sass en la terminal.
+- [Overview](#overview)
+  - [El Reto](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Proceso](#my-process)
+  - [Tecnologías](#built-with)
 
-Por defecto, he añadido en stlyes una subcarpeta para incluir variables y una hoja de reset. Puedes borrarlas o modificarlas si no deseas alguna de ellas (acuérdate de borrar el import de App.css si lo haces).
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-### ¿Cómo utilizarlo?
+## Overview
 
-Puedes clonar este repositorio y borrar las carpetas .github y las que no necesites (como node_modules), o bien puedes descargarlo y copiar el contenido de la carpeta al proyecto donde deseas utilizarlo.
+### El Reto
 
-Instala las dependencias ejecutando npm install.
+En esta prueba los requisitos necesarios eran:
 
-Comprueba que todo está correcto arrancando el proyecto con npm start.
+- Mostrar una lista de restaurantes que incluyera: foto y descripción (_libre_).View the optimal layout for the game depending on their device's screen size
+- Selector de fecha y hora para reservar mesa
+- Selector para añadir número de comensales/personas para la reserva
+- Formulario con: nombre, email y teléfono + botón para enviar.
 
-Recuerda que puedes cortar la carpeta de node_modules para evitar llenar espacio innecesario en tu disco con otras copias.
+- **Bonus**: Como elementos extra, he querido agregar además un buscador y una sección de filtrar locales según su tipo para que muestre sólo aquellos que coincidan con la búsqueda.
 
+### Screenshot
+
+![0a438301-908e-4676-a3b8-e2df3005456b](https://github.com/PatriPatuco/restaurant-finder/assets/112122459/72224a71-3bca-495c-a349-8bebb662d927)
+
+### Links
+- URL de la landing: [Haz click aquí para visitarla](https://patripatuco.github.io/restaurant-finder/)
+
+## Tecnologías
+
+- Semantic HTML5
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- Sass
