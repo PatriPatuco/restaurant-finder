@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "./static/css/main.d0c02cdb.css",
+    "main.js": "./static/js/main.37872ef1.js",
+    "static/media/fbi-amerciana.jpg": "./static/media/fbi-amerciana.2277fe09a6d6c2aab601.jpg",
+    "static/media/almaMater-mediterranea.jpg": "./static/media/almaMater-mediterranea.8a663e66ccfbd75e8a7b.jpg",
+    "static/media/taqueria-la-katrina-mexicana.jpg": "./static/media/taqueria-la-katrina-mexicana.170a24bae2216c952d20.jpg",
+    "static/media/enso-japanese.jpg": "./static/media/enso-japanese.508e3d031449fb47d37e.jpg",
+    "static/media/cooking-sam-oriental.jpg": "./static/media/cooking-sam-oriental.84a53e1debecba8f8f93.jpg",
+    "static/media/la-plaza-italiano.jpg": "./static/media/la-plaza-italiano.357f34d59cd33ad069b0.jpg",
+    "index.html": "./index.html",
+    "main.d0c02cdb.css.map": "./static/css/main.d0c02cdb.css.map",
+    "main.37872ef1.js.map": "./static/js/main.37872ef1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0c02cdb.css",
+    "static/js/main.37872ef1.js"
+  ]
+}
